@@ -1,21 +1,32 @@
-import {defineConfig} from 'sanity'
+import {defineConfig, StudioLogo} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
+import { myTheme } from './theme';
+import StudioNavbar from './components/StudioNavbar';
+import Logo from './components/Logo';
 
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!;
-const dataset = process.env.NEXT_PUBLIC_SANTIY_DATABASE!;
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID! as string;
+const dataset = process.env.NEXT_PUBLIC_SANTIY_DATABASE! as string;
 
 export default defineConfig({
   basePath: "/studio",
-  name: 'PAPAFAM_Content_Studio',
-  title: 'PAPAFAM Content Studio',
-  projectId,
-  dataset,
+  name: 'Faith_Content_Studio',
+  title: 'Faith Content Studio',
+
+  projectId: 'rp9rwe05',
+  dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
 
   schema: {
     types: schemaTypes,
   },
+  studio: {
+    components: {
+      logo: Logo,
+      navbar: StudioNavbar
+    }
+  },
+  theme: myTheme
 })
