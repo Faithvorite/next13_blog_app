@@ -4,7 +4,7 @@ module.exports = {
   experimental: {
     appDir: true
   },
-  // images: {
-// domains: ["links.com"]
-  // }
+  images: {
+domains: ["cdn.sanity.io"],
+  }
 }
