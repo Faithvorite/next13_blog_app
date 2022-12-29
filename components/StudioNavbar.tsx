@@ -16,7 +16,7 @@ function StudioNavbar(props: any) {
                     Check out my art page
                 </h1>
                 <Link
-                href="faithnguyenart.vercel.app"
+                href="https://faithnguyenart.vercel.app"
                 className="text-[#F7AB0a] font-bold ml-2">
                     faithnguyenart.vercel.app       
                 </Link>
