@@ -15,8 +15,8 @@ export default defineConfig({
   name: 'Faith_Content_Studio',
   title: 'Faith Content Studio',
 
-  projectId,
-  dataset,
+  projectId: 'rp9rwe05',
+  dataset: 'production',
 
   plugins: [deskTool(
     {defaultDocumentNode:
