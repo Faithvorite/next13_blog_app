@@ -7,17 +7,17 @@ function StudioNavbar(props: any) {
     <div>
         <div className="flex items-center justify-between p-5">
             <Link href="/"
-            className="text-[#F7AB0A] flex items-center justify-between p-5">
-                <ArrowUturnLeftIcon className="h-6 w-6 text-[#F7AB0A] mr-2" />
+            className="text-white flex items-center justify-between p-5">
+                <ArrowUturnLeftIcon className="h-6 w-6 text-white mr-2" />
                 Go back to Website
             </Link>
-            <div className="hidden md:flex p-5 rounded-lg justify-center border-2 border-[#F7AB0A]">
-                <h1 className="font-bold  text-white">
+            <div className="hidden md:flex p-5 rounded-lg justify-center border border-white">
+                <h1 className="  text-white">
                     Check out my art page
                 </h1>
                 <Link
                 href="https://faithnguyenart.vercel.app"
-                className="text-[#F7AB0a] font-bold ml-2">
+                className="text-white font-bold ml-2">
                     faithnguyenart.vercel.app       
                 </Link>
             </div>

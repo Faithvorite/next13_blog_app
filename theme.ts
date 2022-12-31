@@ -6,7 +6,7 @@ const props = {
     "--my-red": "#db4437",
     "--my-yellow": "#f4b400",
     "--my-green" : "#0f9d58",
-    "--my-brand" : "#F7AB0A"
+    "--my-brand" : "#fff"
 }
 
 export const myTheme = buildLegacyTheme({
