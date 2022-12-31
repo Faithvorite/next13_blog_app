@@ -41,15 +41,15 @@ async function Post({params: { slug } }: Props) {
     return <article className="px-10 pb-28">
         <section className="space-y-2 border border-black text-white mb-10">
             <div className='relative min-h-56 flex flex-col md:flex-row justify-between'>
-                <div className='absolute top-0 w-full h-full opacity-20 blur-sm p-10'>
+                <div className='absolute top-0 w-full h-full blur-sm p-10'>
                     <Image 
-                    className='object-cover object-center mx-auto'
+                    className='z-0 object-cover object-center mx-auto'
                     src={urlFor(post.mainImage).url()}
                     alt={post.author.name}
                     fill
                     />
                 </div>
-                <section className="p-10 bg-black w-full">
+                <section className="z-20 p-10 bg-black bg-opacity-60 w-full">
                     <div className="flex flex-col md:flex-row justify-between gap-y-5">
                         <div>
                             <h1 className="text-4xl font-extrabold">{post.title}
@@ -96,7 +96,15 @@ async function Post({params: { slug } }: Props) {
                 </section>
                  <section className="px-10 lg:px-45">
                 <PortableText value={post.body} components={RichTextComponents}/>
-                    </section>               
+                    </section>    
+                    <div className='relative w-50 h-50'>
+                    <Image 
+                    className='object-cover object-center'
+                    src={urlFor(post.mainImage).url()}
+                    alt={post.author.name}
+                    fill
+                    />
+                </div>
                 </article>
     }
 
