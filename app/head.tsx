@@ -4,7 +4,7 @@ export default function Head() {
         <title>The Blog</title>
         <meta content="width=device-width, intitial-scale=1"
         name="viewport" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://i.imgur.com/QBVbyWe.png" />
         </>
     )
 }
